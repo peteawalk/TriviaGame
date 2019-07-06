@@ -78,7 +78,7 @@
         $("#questions").hide();
         $("#score-box").empty();
 
-        for (k = 0; k < 7; k++) {
+        for (k = 0; k < triviaQuestions.length; k++) {
             var radioValue = $(`input[name='question${k}']:checked`).val();
             if (radioValue === triviaQuestions[k].answer) {
                 rightAnswer++;
